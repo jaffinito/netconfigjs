@@ -1,0 +1,22 @@
+Creates objects
+All xs:element objects are arrays
+Start on first element since that is the configuration element.
+each top level object in the "array" is named after its number
+	0 or 1 or 2 etc...
+Same goes for attributes
+Most items are arrays in fact.
+Should be able to get size if needed.
+
+for elements the name is store under a "$" object beneath the array number object
+for attributes this same object store the name and all other key/value pairs.
+
+You can run into complextypes and alls but you can just work through the objects at the next level
+if attributes are found here they go with the previous element, which shuold still be the active object
+if an all or other type is reached then we expand it and repeat.
+
+attribs and elements are always under complextype except root
+under complexType we will either see another or all or sequence
+
+xs:restriction is always under xs:simpleType under an xs:attribute
+contains xs:enumeration with valuez
+

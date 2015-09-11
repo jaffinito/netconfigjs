@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="configTool">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <title>New Relic .Net Configuration tool</title>
+
+    <script src="bower_components/angular/angular.js"></script><!-- load angular -->
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script><!-- load angular-bootstrap -->
+    <script src="main.js"></script>
+    <script src="processors.js"></script>
+</head>
+<body>
+<form ng-controller="firstCont">
+    <accordion>
+        <accordion-group heading="{{element.elementName}}"
+                         ng-repeat="element in elements"
+                         tooltip="{{element.annotation}}">stuff</accordion-group>
+    </accordion>
+
+</form>
+</body>
+</html>

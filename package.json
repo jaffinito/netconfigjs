@@ -1,0 +1,15 @@
+{
+  "name": "New Relic .Net Agnt Configuration Tool",
+  "version": "0.0.1b",
+  "description": "Configure the .Net Agent easily.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Jacob Affinito",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/jaffinito/netconfigjs/"
+  }
+}
